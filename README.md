@@ -65,3 +65,16 @@ optimal
 c(n,a,n’)表示從n做a走到n’的cost
 graph search符合admissible和consistent就一定optimal但沒有admissible和consistent 不一定就不optimal，ex:若h(n)=h*(n)+100，則search結果出來一樣會optimal但他不符合admissible
 h* 完美估計函式 ，最趨近實際的 h(n)
+
+3-3
+optimality of A*
+on tree if h is admissible
+on graph if h is admissible and consistent
+
+3-4
+time complexity us not A* drawback, usually run out of memory
+iterative deepening A*
+use f(g+h) as cutoff  not depth
+complete 和optimal和 A*一樣只是每一次都限制他的f展到多少時這次search結束（每次search都從root）
+用f當作cutoff每次需要長出的新節點比較少，通常只有一個branch factor數，所以從root開始的expand（重複做的部分）相對多
+再用depth做cutoff的時候，每一次要長出一整個level的節點，exponential的數的節點，所以上面重複的部分相較整體來說是算小的
