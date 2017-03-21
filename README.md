@@ -1,9 +1,10 @@
 # AI_note
 ### ---待整理---
 2-1
-inform and uniform search 的差別在對於我們對於問題的基本知識有多少。
-uniform 不需要預估做哪一個選擇的cost多少，只針對目前唯一有的資訊。
-tree search不偵測state是否有重複現象，graph search會去偵測（效能好，但有記憶體限制）。
+inform search 和 uniform search 的差別在對於我們對於問題的基本知識有多少。
+uniform search 不需要預估做哪一個選擇的cost多少，只針對目前唯一有的資訊去做選則。
+tree search不偵測state是否有重複現象。
+graph search會去偵測state是否有重複（效能好，但有記憶體限制）。
 
 2-4
 bfs 
