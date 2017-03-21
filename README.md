@@ -79,3 +79,19 @@ use f(g+h) as cutoff  not depth
 complete 和optimal和 A*一樣只是每一次都限制他的f展到多少時這次search結束（每次search都從root）
 用f當作cutoff每次需要長出的新節點比較少，通常只有一個branch factor數，所以從root開始的expand（重複做的部分）相對多
 再用depth做cutoff的時候，每一次要長出一整個level的節點，exponential的數的節點，所以上面重複的部分相較整體來說是算小的
+
+5-1
+adversarial search consider multi-agent and competitive
+game theory consider competitive and cooperative
+symbol :
+
+s0:initial state 
+player : the player in state s
+action : set of legal move
+result : transition model sate 經過action 到令state  (s,a)
+terminal test : 檢查是不是goal state
+utility function :只有在遊戲中止（terminal test==true時執行）
+zero-sum零和
+在two player的時候 utility(s,p1) = -utility(s,p2)
+因為假設在零和的清況下，如果我拿三分表示對方拿負三分。
+
